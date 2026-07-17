@@ -19,8 +19,7 @@ The application features a clean, glassmorphism-themed **Gradio Dashboard** allo
 
 The project is designed in modular phases represented by Jupyter Notebooks:
 
-```mermaid
-graph TD
+```
     A[Kaggle Dataset: 7k Books] --> B[data-exploration.ipynb]
     B -->|books_cleaned.csv| C[text-classification.ipynb]
     B -->|books_cleaned.csv| E[vector-search.ipynb]
