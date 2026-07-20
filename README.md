@@ -87,14 +87,6 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 Before running the Gradio dashboard, ensure the dataset pipeline notebooks have been executed in sequence to generate the necessary files (`books_with_emotions.csv` and `tagged_description.txt`).
 
-### File Name Compatibility Note:
-*   The pipeline generates `tagged_description.txt` (singular).
-*   The dashboard script `gradio-dashboard.py` looks for `tagged_descriptions.txt` (plural). 
-*   **Action Required**: Either rename the generated file to `tagged_descriptions.txt` or change the filename inside `gradio-dashboard.py` on line 18:
-    ```python
-    raw_documents = TextLoader("tagged_description.txt").load()
-    ```
-
 To launch the web dashboard, run:
 ```bash
 python gradio-dashboard.py
